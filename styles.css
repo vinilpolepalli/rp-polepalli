@@ -57,6 +57,16 @@
     background-color: #a28f70; /*#0096c7*/
 }
 
+.nav-link {
+    text-decoration: underline; 
+    color: #eae6e6; /* Initial color */
+    transition: color 0.5s ease; 
+}
+
+.nav-link:hover {
+    color: #4b2e02; /* Dark brown color on hover */
+}
+
 /* ----------------- ID CSS ----------------- */
 
 /* -----------------Underline Animation CSS -----------------*/
@@ -84,4 +94,3 @@
     /*transform-origin: bottom left;*/
 }
 
-/* -----------------Changes specific to my reserahc project CSS -----------------*/
