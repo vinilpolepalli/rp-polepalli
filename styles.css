@@ -49,7 +49,7 @@
 }
 
 .procedure{
-    background-color: #dbe3e7;
+    background-color: #d3bd9a ;
     padding: 1px;
 }
 
@@ -58,13 +58,27 @@
 }
 
 .nav-link {
-    text-decoration: underline; 
-    color: #eae6e6; /* Initial color */
-    transition: color 0.5s ease; 
+    position: relative;
+    color: #ffffff; /* Keep text color white */
+    text-decoration: none; /* Remove default underline */
 }
 
-.nav-link:hover {
-    color: #4b2e02; /* Dark brown color on hover */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff; /* Underline color */
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 /* ----------------- ID CSS ----------------- */
@@ -94,3 +108,36 @@
     /*transform-origin: bottom left;*/
 }
 
+
+.shift-right {
+    margin-left: 40px; 
+}
+.custom-hr-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.custom-hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 4px solid black; /* Thicker line */
+    margin: 0 10px;
+}
+
+.diamond {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    transform: rotate(45deg); /* Create diamond shape */
+}
+
+.custom-accordion-button {
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
