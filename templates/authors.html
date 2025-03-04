@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+
+{% block title %}Authors - Research Project{% endblock %}
+
+{% block content %}
+    <!-- About the Team -->
+    <section class="authors" style="margin-bottom: 50px;">
+        <div class="container">
+            <br>
+            <h1 class="text-center about-team" style="color: black;">About the Researcher</h1>
+            <div class="custom-hr-container">
+                <div class="diamond"></div>
+                <hr class="custom-hr">
+                <div class="diamond"></div>
+            </div>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-md-6 d-flex justify-content-center" style="padding: 25px;">
+                    <div class="card about" style="width: 24rem;">
+                        <img src="{{ url_for('static', filename='img/delval.jpg') }}" class="card-img-top" alt="Name 1">
+                        <div class="card-body">
+                            <h4 class="card-title">Vinil Polepalli</h4>
+                            <h5>Student at High Technology High School</h5>
+                            <p class="card-text">Vinil is currently a Junior at High Technology
+                                School. With this project he won 1st Place at the Deleware Valley
+                                Science Fair and is going to be presenting his research at the American
+                                Junior Academy of Science conference in Boston on Presidents Day 
+                                Weekend 2025. Some of his other passions are robotics, coding, 
+                                and fencing.
+                            </p>
+                            <div class="d-flex justify-content-center align-items-center mt-3">
+                                <a href="mailto:vipolepalli@ctemc.org" class="me-3" style="padding: 10px;">
+                                    <i class="bi bi-envelope" style="font-size: 2rem; color: black;"></i>
+                                </a>
+                                <a href="https://github.com/vinilpolepalli" target="_blank" style="padding: 10px;">
+                                    <i class="bi bi-github" style="font-size: 2rem; color: black;"></i>
+                                </a>
+                                <a href="mailto:vp2562@columbia.edu" class="me-3" style="padding: 15px;">
+                                    <img src="{{ url_for('static', filename='img/columbia.png') }}" alt="Columbia University Logo" style="width: 2.5rem; height: auto; margin-top: -7.5px;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

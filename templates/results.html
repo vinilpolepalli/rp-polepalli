@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block title %}Results - Research Project{% endblock %}
+
+{% block extra_head %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+{% endblock %}
+
+{% block content %}
+<!-- Chart Container -->
+<div class="container-fluid p-3" style="background-color: white;">
+    <h2 class="text-center">Graph for Regenerating Dugesia Tigrina by Varying Concentrations of EGCG &/or Piperine Growth for Day 7 (% of Day 1)</h2>
+    <canvas id="myChart" width="400" height="200"></canvas>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/results.js') }}"></script>
+{% endblock %}

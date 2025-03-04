@@ -1,0 +1,136 @@
+{% extends 'layout.html' %}
+
+{% block title %}Research Project{% endblock %}
+
+{% block content %}
+    <!-- Show Case-->
+    <section class="showcase text-light p-2 text-center ">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 p-0 d-flex align-items-center">
+                    <img class="img-fluid" src="{{ url_for('static', filename='img/cancer-landing.png') }}" alt="Cancer Graphic">
+                </div>
+                <div class="col-sm-8 p-0 d-flex align-items-center">
+                    <div class="container">
+                        <h1 class="display-4">Effects of Epigallocatechin Gallate (EGCG) 
+                            and Piperine Compounds on the Regeneration of D. Tigrina</h1>
+
+                        <h2>Vinil Polepalli, Mr. Craig Queenan</h2>
+                        <h5><em>High Technology High School, Lincroft, NJ, USA</em><br> <br></h5>
+                        <ul class="navbar-nav d-flex flex-row justify-content-center">
+                            <li class="nav-item">
+                                <a href="https://docs.google.com/document/d/1wC2C2wi1iNLNsjyjLd5FLyFGEFzdlzGfntoiItj1R4g/edit" class="nav-link nbMenuItem fs-6 ms-5">Paper</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://docs.google.com/presentation/d/1lGT-eQy6PCEnY6nIRf9uW76qejatM1lXepzeXYRNnWg/edit?usp=sharing" class="nav-link nbMenuItem fs-6 ms-5">Poster</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://docs.google.com/document/d/1sx5iwTc-Y7k20WnFobu9jRqeq-0QKfJ3YtSM2ppTbDM/edit?usp=sharing" class="nav-link nbMenuItem fs-6 ms-5">Lab Notebook</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="overview text-dark p-2 text-left">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 p-3">
+                    <img class="img-fluid mt-3" src="{{ url_for('static', filename='img/background.png') }}" alt="Water Temperature Graph" style="width: 200%; height: auto; padding-top:200px;">
+                </div>
+                <div class="col-sm-8 p-3">
+                    <h1 class="ovPadLeft">Background</h1>
+                    <p class="lead overview-font ovPadLeft">
+                        This research project tested the potential of 
+                        Epigallocatechin Gallate (EGCG) & Piperine compounds
+                         on the Regeneration of <em>Dugesia Tigrina</em> 
+                         (Planaria) to see if they can be utilized as a 
+                         potential cancer treatment together.
+                        <br><br>
+                        <strong><u>EGCG</u></strong>
+                        <ul class="ms-3 mt-0">
+                            <li>Most abundant antioxidant and catechin 
+                                in <u>green tea</u>.</li>
+                            <li>Effectively <u>inhibits tumor growth</u> by 
+                                targeting proteins such as vascular 
+                                endothelial growth factor and epidermal 
+                                growth factor receptor, which are crucial 
+                                for <u>angiogenesis</u> and <u>cell proliferation</u>.</li>
+                        </ul>
+                        <u style="font-size: 1.25rem; margin-left: 20px;">Piperine</u>
+                        <ul class="ms-3 mt-0" style="margin-left: 20px;">
+                            <li>An abundant alkaloid in <u>black pepper</u>.</li>
+                            <li>Modulates the <u>WNT B-catenin pathway</u> implicated with key processes such gene transcription and 
+                                cell regulation.</li>
+                            <li>Enhances the <u>bioavailability</u> of co-administered compounds by inhibiting enzymes.</li>
+                        </ul>
+                        <u style="font-size: 1.25rem; margin-left: 20px;"><em>Dugesia Tigrina</em></u>
+                        <ul class="ms-3 mt-0" style="margin-left: 20px;">
+                            <li>Commonly Known as <u>Planaria</u></li>
+                            <li>Planaria is a flatworm that regenerates its 
+                            <u>entire body</u> from just a tiny fragment.</li>
+                            <li>Valuable model organism for studying tissue 
+                                regeneration processes, the roles of 
+                                stem cells, growth factors, and signaling 
+                                pathways in the <u>regeneration process</u>.</li>
+                            <li>Stem cells share signaling pathways 
+                                used in cancer cells, like the <u>Wnt, 
+                                Hedgehog, and Notch</u> pathways.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 p-3">
+                <h1 class="ovPadLeft">Rationale</h1>
+                <p class="lead overview-font ovPadLeft">
+                    <u>Cancer treatments</u> have been a major focus of the medical 
+                    field for decades.
+                    <br><br>
+                    <strong><u>Current Methods of Treatment</u></strong>
+                    <ul class="ms-3 mt-0">
+                        <li>Radiation</li>
+                        <li>Chemotherapy</li>
+                        <li>Hormonal Therapy</li>
+                    </ul>
+                    <u style="font-size: 1.25rem; margin-left: 20px;">Drawbacks with Treatments</u>
+                    <ul class="ms-3 mt-0" style="margin-left: 20px;">
+                        <li>In 2019, the <u>survival rate</u> for individuals 
+                            diagnosed with various cancers between 0 and < 10 years after 
+                            diagnosis was approximately 55%.</li>
+                        <li>49% of cancer patients experienced <u>financial 
+                            hardship.</u></li>
+                        <li>Enhance the bioavailability of co-administered compounds by inhibiting enzymes.</li>
+                    </ul>
+                    <u style="font-size: 1.25rem; margin-left: 20px;">Problem Statement & Prospective Solution</u>
+                    <p class="shift-right">Today, there is a need for a highly 
+                        effective and affordable treatment. Compounds such as epigallocatechin
+                        gallate (EGCG) and piperine have shown promise as <u>potential cancer
+                        treatments </u> that fit these constraints.
+                    </p>
+                </p>
+            </div>   
+            <div class="col-sm-4 p-3">
+                <img class="img-fluid" src="{{ url_for('static', filename='img/cancer-stock.png') }}" alt="Cancer Image">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 p-3">
+                <img class="img-fluid" src="{{ url_for('static', filename='img/hypothesis.png') }}" alt="Water Temperature Graph" style="width: 50%; height: auto; margin-left: 100px;">
+            </div>
+            <div class="col-sm-8 p-3">
+                <h1 class="ovPadLeft">Hypothesis </h1>
+                <p class="lead overview-font ovPadLeft">As a result of the 
+                    medicinal properties of the two compounds, it was 
+                    hypothesized that planaria treated with various 
+                    concentrations of EGCG and Piperine over a 7-day period 
+                    will regenerate at a slower rate compared to planaria 
+                    grown in regular spring water.</p>
+            </div>
+        </div>
+    </section>
+{% endblock %}
